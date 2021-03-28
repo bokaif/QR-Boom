@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Luckiest Guy';
+    text-align: center;
+}
+body{
+    background-color: #0c0c0c;
+    background-image:  linear-gradient(rgba(247, 247, 231, 0.3) 0.5px, transparent 0.5px), linear-gradient(to right, rgba(247, 247, 231, 0.3) 0.5px, #0c0c0c 0.5px);
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.wrapper{
+    width: 98%;
+    min-height: 96%;
+    background-color: rgba(28, 28, 28, 0.8);
+    border-radius: 20px;
+    margin: 12px auto 0px auto;
+
+}
+
+.wrapper .header{
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-size: 40px;
+    color: #f7f7e7;
+}
+
+.wrapper .header::before{
+    content: "- ";
+    color: transparent;
+    -webkit-text-stroke: 1px #f7f7e7;
+}
+.wrapper .header::after{
+    content: " -";
+    color: transparent;
+    -webkit-text-stroke: 1px #f7f7e7;
+}
+
+.wrapper .desc{
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 28px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #f7f7e7;
+}
+
+
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 30px;
+    display: block;
+    background: transparent;
+    color: #111;
+}
+
+input::-webkit-search-cancel-button{ 
+    -webkit-appearance: none;
+}
+
+
+form{
+    margin: 56px auto;
+    transform: translate(-0%,-0%);
+    width: 380px;
+    height: 50px;
+    background: rgba(247, 247, 231,0.8);
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid transparent;
+    padding: 5px;
+}
+
+
+
+.fa-qrcode{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgba(247, 247, 231,0.8);
+    background: #111;
+}
+
+form:hover{
+    cursor: pointer;
+}
+
+.wrapper .qrcode{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    font-size: 22px;
+    border: 2px dashed #f7f7e7;
+    display: grid;
+    place-items: center;
+    color: transparent;
+    -webkit-text-stroke: 0.3px #f7f7e7;
+    line-height: 30px;
+}
+.wrapper .creds{
+    margin: 60px auto 0 auto;
+    padding-bottom: 30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #f7f7e7;
+}
+.wrapper .creds .fa-heart{
+    color: #f7f7e7;
+}
+
+.zigzag {
+	display: inline-block;
+	position: relative;
+}
+
+.zigzag:after {
+	content: "";
+	height: 5px;
+	width: 100%;
+	position: absolute;
+	background: url("../img/und.png");
+	background-size: 8px;
+	top: 35px;
+	bottom: 0;
+	left: 0;
+	-webkit-animation: zigzagplay 2s infinite linear;
+	-moz-animation: zigzagplay 2s infinite linear;
+	-ms-animation: zigzagplay 2s infinite linear;
+	-o-animation: zigzagplay 2s infinite linear;
+	animation: zigzagPlay 2s infinite linear;
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+.zigzag:hover:after {
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	-o-animation-play-state: running;
+	animation-play-state: running;
+}
+
+@-webkit-keyframes zigzagPlay {
+	0% {
+		background-position: 0;
+	}
+
+	100% {
+		background-position: -96px;
+	}
+}
+
+@-moz-keyframes zigzagPlay {
+	0% {
+		background-position: 0;
+	}
+
+	100% {
+		background-position: -96px;
+	}
+}
+
+@-ms-keyframes zigzagPlay {
+	0% {
+		background-position: 0;
+	}
+
+	100% {
+		background-position: -96px;
+	}
+}
+
+@-o-keyframes zigzagPlay {
+	0% {
+		background-position: 0;
+	}
+
+	100% {
+		background-position: -96px;
+	}
+}
+
+@keyframes zigzagPlay {
+	0% {
+		background-position: 0;
+	}
+
+	100% {
+		background-position: -96px;
+	}
+}
+
+@media screen and (max-width: 500px){
+    .zigzag:after{
+        visibility: hidden;
+    }
+    form{
+        width: 90%;
+    }
+}
