@@ -12,10 +12,8 @@ body{
     background-position: center;
 }
 
-.qrcode img{
-    width: 160px;
-    height: 160px;
-}
+
+
 
 .wrapper{
     width: 98%;
@@ -91,7 +89,7 @@ form{
 
 
 
-.fa-qrcode{
+.fa-code{
     box-sizing: border-box;
     padding: 10px;
     width: 42.5px;
@@ -122,6 +120,12 @@ form:hover{
     -webkit-text-stroke: 0.3px #f7f7e7;
     line-height: 30px;
 }
+
+.wrapper .qrcode img{
+    width: 160px !important;
+    height: 160px !important;
+}
+
 .wrapper .creds{
     margin: 60px auto 0 auto;
     padding-bottom: 30px;
