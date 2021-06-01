@@ -12,6 +12,11 @@ body{
     background-position: center;
 }
 
+.qrcode img{
+    width: 160px;
+    height: 160px;
+}
+
 .wrapper{
     width: 98%;
     min-height: 96%;
